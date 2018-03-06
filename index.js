@@ -8,6 +8,8 @@ const express  							= require('express'),
 			User									= require('./models/user'),
 			LocalStrategy 				= require('passport-local'),
 			crypto 								= require('crypto'),
+			Sequelize 						= require('sequelize'),
+			bcrypt								= require('bcrypt'),
 			sqlite3 							= require('sqlite3');
 
 const db = new sqlite3.Database('./database.sqlite3');
